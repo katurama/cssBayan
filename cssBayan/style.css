@@ -3,6 +3,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -42,6 +43,8 @@ input {
 .bayan__sliders {
     width: 100%;
     margin: auto;
+    -webkit-transition: margin-left 800ms ease-in-out;
+    -o-transition: margin-left 800ms ease-in-out;
     transition: margin-left 800ms ease-in-out;
 }
 
@@ -51,11 +54,18 @@ h1,
 }
 
 .img {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
     transition: max-height 0.5s ease-in-out;
 }
 
@@ -69,11 +79,16 @@ img {
 }
 
 .bayan__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 svg {
+    -ms-flex-item-align: start;
     align-self: flex-start;
     height: 2vw;
     width: 2vw;
@@ -93,11 +108,15 @@ svg {
 .bayan__sliders input:checked+label .img,
 .bayan__sliders input:hover+label .img {
     max-height: 50vw;
+    -webkit-transition: max-height 0.5s ease-in;
+    -o-transition: max-height 0.5s ease-in;
     transition: max-height 0.5s ease-in;
 }
 
 .bayan__sliders input:hover+label svg,
 .bayan__sliders input:checked+label svg {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
