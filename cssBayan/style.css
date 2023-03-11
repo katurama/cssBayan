@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wraper {
+    margin: auto;
+    max-width: 50vw;
+    padding-bottom: 2vw;
+}
+
+.bayan__sliders:hover * {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #4865b8;
+    padding: 1vw 0vw;
+}
+
+input {
+    display: none;
+}
+
+.bayan__sliders {
+    width: 100%;
+    margin: auto;
+    transition: margin-left 800ms ease-in-out;
+}
+
+h1,
+.bayan {
+    border-bottom: 2px solid #4865b8;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.bayan {
+    padding: 2vw 0vw
+}
+
+.bayan p {
+    font-size: 2vw;
+}
+
+
+.bayan__sliders input:checked + label {
+    color: #4865b8;
+    font-weight: 700;
+}
+
+.bayan__sliders input:checked + label .img {
+    display: block;
+}
